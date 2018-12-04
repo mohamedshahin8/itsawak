@@ -1,0 +1,694 @@
+body{
+
+    direction: rtl;
+    font-family: 'Kufyan Arabic Bold', 'Cairo', sans-serif;
+    background: #232323;
+
+}
+
+
+.header{
+    text-align: center;
+    background: #232323;
+    padding: 15px 0px 1px 0px;
+}
+
+.header > .container > div{
+      display: inline-block;
+      background: #232323;
+
+    }
+
+
+.header > .container > .Site_logo >  h1 > a {
+    font-size: 63px;
+    font-weight: 900;
+
+}
+
+.header > .container > .Site_logo >  h1 > a > span{
+    color: white;
+}
+
+.header > .container > .Site_logo >  h1 > a:hover {
+    text-decoration-line: none;
+
+}
+
+.header-Ad{
+
+    text-align: center;
+    margin: 10PX 0PX 5px 0px;
+}
+
+.carousel-item{
+    height: 45px;
+    padding: 5px 10px;
+    font-size: 22px;
+}
+.Header-AD1{
+    background: #D1ACA6;
+}
+.Header-AD2{
+    background: #8E77B9;
+}
+.Header-AD3{
+    background: #965860;
+}
+
+
+/* -----------------------------------MainSections------------------------------- */
+
+.collapse{
+    text-align: center;
+    padding: 1px;
+    font-size: 25px;
+    background: #232323;
+
+}
+
+
+
+.navbar-collapse > ul > li{
+     text-align: center;
+     display: inline-block;
+     text-decoration: none;
+     font-size: 25px;
+     color: white;
+
+
+}
+
+.collapse > ul > li > a{
+        margin: 0px 31px;
+        color: white;
+
+}
+
+.collapse > ul > li > a:hover {
+    text-decoration-line: none;
+
+}
+
+.navbar-light > .Site_login{
+    padding: 0px 5px;
+    text-align: right;
+    border: 2px black solid;
+    background:black;
+    border-radius: 50%;
+    color: white
+
+
+}
+
+.collapse > ul > li > a , .header > .container > .Site_logo >  h1 > a {
+    color: white;
+
+}
+
+
+.collapse > ul > li > .activePage{
+
+    color:#4E6997;
+    border-bottom: 3px #4E6997  solid;
+
+}
+.navbar-toggler
+{
+    background: white;
+}
+.loginModal
+{
+    text-align: right;
+}
+
+.form-group{
+    width: 92.3%;
+}
+
+.Incorrect{
+    color: red;
+    display: none;
+
+}
+
+/* ----------------------------------------- HOME1 ----------------------------------------------  */
+
+.banner{
+     background-image: url(../images/b1.jpg);
+   min-height: 591px;
+   width: 100%;
+   background-size: cover;
+   background-repeat: no-repeat;
+}
+
+/* ----------------------------------------- ADS ----------------------------------------------  */
+
+.ADS{
+    border: 1.5px black solid;
+    background:#9CA0A9 ;
+    height: 333px;
+    margin: 5px;
+    position: relative;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.4);
+ }
+
+
+ .ADS > div {
+    position: absolute;
+    top: 3px;
+    left: 3px;
+    right: 3px;
+    bottom: 3px;
+    text-align: center;
+    color: white;
+    font-size: 41px;
+}
+
+ .ADS > div > a > img {
+    width: 100%;
+    height: 100%;
+}
+
+/* Second Pages ADS */
+
+.SP-ADS {
+    border: 1.5px black solid;
+    background:#9CA0A9 ;
+    height: 317px;
+    margin: 5px;
+    position: relative;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.4);
+ }
+
+
+.SP-ADS > div {
+    position: absolute;
+    top: 3px;
+    left: 3px;
+    right: 3px;
+    bottom: 3px;
+    text-align: center;
+    color: white;
+    font-size: 41px;
+}
+
+.SP-ADS > div > img {
+    width: 100%;
+    height: 100%;
+}
+
+
+/* ----------------------------------------- HOME2 ----------------------------------------------  */
+
+
+/* ----------------------------------------- HOME2 ----------------------------------------------  */
+
+.second{
+
+    margin: 21px auto 0px;
+    padding: 10px 0px;
+    direction: rtl;
+    text-align: right;
+ }
+
+
+
+
+ .second > .container > .row > .TopClothes , .TopMobile{
+    background: #9CA0A9 ;
+    margin: 5px;
+    padding: 0px;
+    text-align: center;
+}
+
+.second > .container > .row > .TopClothes > .head , .TopMobile > .head{
+    background:#4E6997 ;
+    padding: 3px;
+    font-size: 25px;
+    color: bisque;
+
+}
+
+.second > .container > .row > .TopClothes > a , .TopMobile > a{
+    text-decoration-line: none;
+    color: bisque;
+}
+
+
+.Shop{
+    background:#464646 ;
+    padding: 3px;
+    font-size: 25px;
+    color: bisque;
+    width: 31%;
+    display: inline-block;
+    margin: 15px 3px;
+    border-radius: 5px;
+}
+.Shop > .hovereffect {
+    width: 100%;
+    height: 100%;
+    float: left;
+    overflow: hidden;
+    position: relative;
+    text-align: center;
+    cursor: default;
+  }
+
+.Shop >.hovereffect .overlay {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    overflow: hidden;
+    top: 0;
+    left: 0;
+    background-color: rgba(75,75,75,0.7);
+    -webkit-transition: all 0.4s ease-in-out;
+    transition: all 0.4s ease-in-out;
+  }
+
+.Shop >.hovereffect:hover .overlay {
+    background-color: rgba(48, 152, 157, 0.4);
+
+  }
+
+  .hovereffect img {
+    display: block;
+    position: relative;
+  }
+
+  .Shop >.hovereffect h2 {
+    text-transform: uppercase;
+    color: #fff;
+    text-align: center;
+    position: relative;
+    font-size: 17px;
+    padding: 10px;
+    background: rgba(0, 0, 0, 0.6);
+    -webkit-transform: translateY(45px);
+    -ms-transform: translateY(45px);
+    transform: translateY(45px);
+    -webkit-transition: all 0.4s ease-in-out;
+    transition: all 0.4s ease-in-out;
+  }
+
+  .Shop >  .hovereffect:hover h2 {
+    -webkit-transform: translateY(5px);
+    -ms-transform: translateY(5px);
+    transform: translateY(5px);
+  }
+
+  .Shop >  .hovereffect a.info {
+    display: inline-block;
+    text-decoration: none;
+    padding: 7px 14px;
+    text-transform: uppercase;
+    color: #fff;
+    border: 1px solid #fff;
+    background-color: transparent;
+    opacity: 0;
+    filter: alpha(opacity=0);
+    -webkit-transform: scale(0);
+    -ms-transform: scale(0);
+    transform: scale(0);
+    -webkit-transition: all 0.4s ease-in-out;
+    transition: all 0.4s ease-in-out;
+    font-weight: normal;
+    margin: -45px 0 0 0;
+    padding: 100px 0px;
+    width: 98%;
+    font-size: 17px;
+  }
+
+  .Shop >  .hovereffect:hover a.info {
+    opacity: 1;
+    filter: alpha(opacity=100);
+    -webkit-transform: scale(1);
+    -ms-transform: scale(1);
+    transform: scale(1);
+  }
+
+  .Shop >  .hovereffect a.info:hover {
+    box-shadow: 0 0 5px #fff;
+  }
+
+/* ----------------------------------------- HOME3 ----------------------------------------------  */
+
+.third{
+    padding: 10px 0px;
+    direction: rtl;
+    text-align: right;
+    background: #C8A7C3;
+ }
+
+.description >  .head > span{
+
+    font-weight: bold;
+    font-size: 30px;
+    border-bottom: double 7px white;
+
+}
+
+.description > .SiteD{
+    font-size: 24px;
+    color: black;
+    margin-top: 15px;
+}
+ .Slogo
+ {
+     max-height: 250px;
+ }
+
+ .Slogo > img {
+       width: 100%;
+       height: 100%;
+    margin: 0px;
+ }
+
+ /* ----------------------------------------- HOME4 ----------------------------------------------  */
+
+.forth{
+    padding: 10px 0px;
+    direction: rtl;
+    text-align: right;
+    color: white;
+ }
+
+.contact > .head > span{
+
+    font-weight: bold;
+    font-size: 30px;
+    border-bottom: double 7px white;
+
+}
+
+.contact > .Social{
+    font-size: 19px;
+    color: white;
+    margin-top: 15px;
+
+}
+
+.contact > .Social > ul > li {
+    list-style: none;
+
+}
+
+.Copyrigths{
+
+    text-align: center;
+    font-size: 17px;
+    vertical-align: centre;
+    padding: 45px 0px;
+    max-height: 100px;
+    font-weight: bold;
+}
+.Copyrigths > button{
+
+    background: #F6AC71;
+    border: #F6AC71 1px solid;
+    color: black;
+    font-weight: bold;
+}
+.Copyrigths > button:hover{
+
+    background: #F6AC71;
+    border: #F6AC71 1px solid;
+    color: black;
+    font-weight: bold;
+}
+
+.modal-body > div{
+    display: inline-block;
+    margin:  0px 20px  ;
+}
+
+.modal-body > .Line{
+    border: 1px double black;
+    height: 210px;
+
+}
+
+.modal-body > div > img{
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    margin-bottom: 9px;
+}
+.modal-body > div > a{
+    font-size: 23px;
+    margin: 3px;
+}
+
+
+/* ----------------------------------------- Clothes Shop ----------------------------------------------  */
+
+
+.Main{
+    background: #232323;
+
+}
+
+.Shops{
+     /* background: #9CA0A9; */
+     min-height: 666px;
+     margin: 0px auto 10px;
+     direction: rtl;
+     text-align: right;
+     width: 74%;
+  }
+
+.ClothesShopAds{
+   margin-top: 10px;
+}
+
+ .Shops .col-md{
+  padding: 0px;
+  margin: 10px;
+  background:#C8A7C3;
+  text-decoration-line: none;
+  color: #000;
+  border-radius: 5px;
+ }
+ .Shops .col-md:hover{
+     transition: all .7s;
+    transform: scale(1.2,1.2);
+    z-index: 3;
+}
+
+ .ShareText{
+     color: white;
+
+}
+
+.PageNumbers{
+    text-align: center;
+    margin: 12px 0px;
+}
+
+.PageNumbers > ul >li{
+    display: inline-block;
+    padding: 7px 14px;
+    margin: 0px .5px;
+    background:#C8A7C3;
+    border-radius: 3px;
+    font-weight: bold;
+    font-size: 20px;
+}
+
+.PageNumbers > ul >li:hover{
+
+    background:#F6AC71;
+
+}
+
+.PageNumbers > ul >li > a {
+
+    display: inline-block;
+    border-radius: 3px;
+    color: #000;
+}
+
+.PageNumbers > ul >li > a:hover {
+    text-decoration-line: none;
+    background:#F6AC71;
+
+}
+.PageNumbers > ul >.ActivePageNumber{
+    background:#F6AC71;
+}
+
+.PageNumbers > ul > .hiddenPageNumber{
+    display: none;
+}
+
+
+
+/* mobileshop page */
+
+#MobilesShop .col-md{
+
+    background:#63AECD;
+}
+
+.MPageNumbers > ul >li{
+    background:#63AECD;
+
+}
+
+.PageNumbers > ul >li > a:hover {
+    text-decoration-line: none;
+
+    background:#F6AC71;
+}
+.PageNumbers > ul >.ActivePageNumber{
+
+    background:#F6AC71;
+}
+
+
+/* ----------------------------------------- DisplayClothesShop ----------------------------------------------  */
+
+.ItemList{
+    /* border: 3px black dashed; */
+    direction: rtl;
+    text-align: right;
+    width: 64%;
+    margin: auto;
+
+  }
+
+.ShopDetails{
+    color: white;
+    background:#232323;
+    position:fixed;
+    right:0px;
+    bottom: 0px;
+    height: 407px;
+    width: 18%;
+    text-align: center;
+    padding: 5px 10px;
+}
+
+
+.ShopDetails > img{
+    width: 100%;
+    height: 150px;
+    border: 1px solid black;
+    margin-top: 9px;
+}
+
+.ShopDetails > div > button > a{
+color: white;
+
+}
+
+.asideAD{
+    background:#232323;
+    border: 1px white double;
+    color: white;
+    position:fixed;
+    left:0px;
+    bottom: 0px;
+    height: 407px;
+    width: 18%;
+    text-align: center;
+    padding: 5px 10px;
+}
+
+
+/* responsive */
+
+ @media screen and (max-width:1000px) {
+
+  .ItemList{
+    height: 1210px;
+    background: red;
+    direction: rtl;
+    text-align: right;
+    width: 100%;
+    position: relative;
+    margin: auto;
+  }
+
+  .ShopDetails{
+    background:#F8AC72;
+    position: static;
+    width: 100%;
+    height: 330px;
+    padding: 5px;
+ }
+
+.ShopDetails > div > h5{
+    display: inline-block;
+}
+
+.Items{
+
+    background: green;
+}
+.ShopDetails > img{
+    width: 100%;
+    height: 170px;
+    border: 1px solid black;
+
+}
+.asideAD{
+    background:#F8AC72;
+    position: static;
+    width: 100%;
+    height: 280px;
+    padding: 5px;
+    height: 200px;
+    width: 100%;
+    text-align: center;
+
+}
+
+
+}
+
+
+.Item{
+    background: #C8A7C3;
+    padding: 5px;
+    margin: 1px;
+}
+
+.Item  >img{
+    height: 250px;
+    width: 100%;
+    border: 1px solid black;
+
+}
+
+.Item > ul{
+     display: inline-block;
+
+}
+
+/* ----------------------------------------- DisplayMobilesShop ----------------------------------------------  */
+
+.MobileItem > #accordion > h3{
+
+    color: white;
+
+}
+.MobileItem > #accordion > .card > .show{
+    font-size: 19px;
+    padding: 5px;
+    margin: 1px;
+    text-align: right;
+    background: #F7F7F7;
+
+}
+.MItem{
+    border: 1px black thick;
+    background: #F7F7F7;
+    font-size: 19px;
+    padding: 5px;
+    margin: 1px;
+    text-align: right;
+
+}
