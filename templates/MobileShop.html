@@ -1,0 +1,338 @@
+{% load static %}<!DOCTYPE html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7" lang=""> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8" lang=""> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9" lang=""> <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang=""> <!--<![endif]-->
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>موقع إتسوق المحلة الكبرى</title>
+    <meta name="description" content="مول المحلة الكبرى">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <link rel="shortcut icon" href="icon.ico">
+
+    <link rel="stylesheet" href= "{% static   "css/bootstrap.min.css"    %}">
+    <link rel="stylesheet" href= "{% static   "css/font-awesome.min.css" %}">
+    <link rel="stylesheet" href= "{% static   "css/themify-icons.css"    %}">
+    <link rel="stylesheet" href= "{% static   "css/flag-icon.min.css"    %}">
+    <link rel="stylesheet" href= "{% static   "css/main.css"             %}">
+    <link href="https://fonts.googleapis.com/css?family=Cairo" rel="stylesheet">
+    <script src="{% static "js/vendor/jquery-2.1.4.min.js" %}"></script>
+
+</head>
+<body>
+
+<!-- header -->
+
+<div class="header">
+    <div class="container">
+        <div class="Site_logo">
+            <h1><a href="{% url 'home' %}"><span>موقع إتسوق المحلة الكبرى </span></a></h1>
+        </div>
+    </div>
+
+</div>
+ <nav class="navbar navbar-expand-lg navbar-light ">
+
+
+
+        <!-- Button trigger modal -->
+
+            <!-- Modal -->
+            <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                <div class="modal-dialog" role="document">
+                        <div class="modal-content">
+                        <div class="modal-header">
+                        <h5 class="modal-title" id="exampleModalLabel">
+                                                تسجيل الدخول
+                                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                        <span aria-hidden="true">&times;</span>
+                                </button>
+
+                        </h5>
+                        </div>
+                        <div class="modal-body loginModal">
+                                        <div class="form-group">
+                                                        <label for="usrname"><span class="glyphicon glyphicon-user"></span>  الإسم : </label>
+                                                        <input type="text" class="form-control" id="usrname" placeholder="الإسم">
+                                                </div>
+                                                <div class="form-group">
+                                                        <label for="psw"><span class="glyphicon glyphicon-eye-open"></span> الرقم السرى : </label>
+                                                        <input type="password" class="form-control" id="psw" placeholder="الرقم السرى" >
+                                                </div>
+                                                <div class="Incorrect ">
+                                                </div>
+                                                        <button type="submit" class="btn btn-success btn-block" onclick="login();" >
+                                                                <span class="glyphicon glyphicon-off"></span> دخول
+                                                        </button>
+                                        </div>
+                        </div>
+                 </div>
+            </div>
+
+
+
+
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav mr-auto">
+
+            <li class="nav-item ">
+                    <a id="Mainbutton "  href="{% url 'home' %}"  > الرئيسية</a>
+                </li>
+            <li class="nav-item">
+                    <a  id="ClothesShopbutton"   href="{% url 'clothes-shops' %}" >  محلات الملابس  </a>
+            </li>
+            <li class="nav-item">
+                        <a  id="MobileShopbutton" class="activePage" href="{% url 'mobiles-shops' %}" >  محلات الموبايلات  </a>
+            </li>
+            <li class="nav-item">
+                    <a id="ContactUSbutton" href="#home4" > تواصل معنا </a>
+            </li>
+        </ul>
+    </div>
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+
+        </div>
+</nav>
+
+                        <!-- Header Ads -->
+
+<div id="carouselExampleSlidesOnly" class="carousel slide header-Ad" data-ride="carousel">
+        <div class="carousel-inner">
+          {% for obj in object_list2 %}
+
+                  <div class="carousel-item active Header-AD1">
+                        {{ obj.address1_text}}
+                  </div>
+                  <div class="carousel-item Header-AD2">
+                    {{ obj.address2_text}}
+
+                 </div>
+                  <div class="carousel-item Header-AD3">
+                    {{ obj.address3_text}}
+
+                </div>
+          {% endfor %}
+        </div>
+</div>
+
+ <!-- header -->
+
+ <!-- Main Bannar -->
+
+ <div class="Main" id="MobilesShop">
+        <div class="container-fluid">
+                <div class="row">
+                            <!-- MobilesShops -->
+
+
+                            <div class="Shops col-md-9" id="MobilesShop">
+                                            <div class=" container-fluid">
+                                                 <div class="row justify-content-center">
+                                                   {% for obj in object_list %}
+
+                                                            <a href="{% url 'mobiles' pk=obj.pk %}" class="col-md col-md-3">
+                                                                <img class="card-img-top" src="{{ obj.shop_image.url  }}">
+                                                                <div class="card-body">
+                                                                  <h5 class="card-title">{{ obj.shop_name }}</h5>
+                                                                  <p class="card-text">{{ obj.shop_location }}</p>
+                                                                  <p class="ShareText">
+
+                                                                    تم زياره الموقع <span>{{ obj.num_of_share }}</span> مرات
+
+                                                                  </p>
+                                                                </div>
+                                                            </a>
+
+                                                            {% endfor %}
+
+                                                 </div>
+
+                                             </div>
+                             </div>
+
+                            <!-- MobilesShops -->
+
+                            <!-- MobilesShopsAds -->
+
+                               <div class="MobilesShopsAds col-md-3">
+                                    <div class="container">
+                                        <div class="row">
+                                            <div id="ClothesShop-AD1" class="SP-ADS col-sm">
+                                              {% for obj in object_list3%}
+                                                <div>
+                                                    <img src="{{ obj.phone1photo1.url}}">
+                                                </div>
+                                                <div>
+                                                    <img src="{{ obj.phone1photo2.url}}">
+                                                </div>
+                                                <div>
+                                                    <img src="{{ obj.phone1photo3.url}}">
+                                                </div>
+                                                {% endfor %}
+                                            </div>
+                                        </div>
+                                        <div class="row">
+                                            <div id="ClothesShop-AD2" class="SP-ADS col-sm">
+                                              {% for obj in object_list3%}
+                                                <div>
+                                                    <img src="{{ obj.phone2photo1.url}}">
+                                                </div>
+                                                <div>
+                                                    <img src="{{ obj.phone2photo2.url}}">
+                                                </div>
+                                                <div>
+                                                    <img src="{{ obj.phone2photo3.url}}">
+                                                </div>
+                                              {% endfor %}
+                                            </div>
+                                        </div>
+                                        <div class="row">
+                                            <div id="ClothesShop-AD3" class="SP-ADS col-sm">
+                                              {% for obj in object_list3%}
+                                                <div>
+                                                    <img src="{{ obj.phone3photo1.url}}">
+                                                </div>
+                                                <div>
+                                                    <img src="{{ obj.phone3photo2.url}}">
+                                                </div>
+                                                <div>
+                                                    <img src="{{ obj.phone3photo3.url}}">
+                                                </div>
+                                              {% endfor %}
+                                            </div>
+                                        </div>
+                                        <div class="row">
+                                                <div id="ClothesShop-AD4" class="SP-ADS col-sm">
+                                                  {% for obj in object_list3%}
+                                                    <div>
+                                                        <img src="{{ obj.phone4photo1.url}}">
+                                                    </div>
+                                                    <div>
+                                                        <img src="{{ obj.phone4photo2.url}}">
+                                                    </div>
+                                                    <div>
+                                                        <img src="{{ obj.phone4photo3.url}}">
+                                                    </div>
+                                                  {% endfor %}
+                                                </div>
+                                            </div>
+
+                                    </div>
+
+
+
+                                </div>
+
+                            <!-- MobilesShopsAds -->
+
+                </div>
+        </div>
+</div>
+
+
+
+ <!-- contact -->
+
+<div class="forth" id="home4">
+        <div class="container">
+
+                <div class="row">
+
+                        <div class="contact col-sm">
+                                <div class="head">
+                                             <span> تواصل معنا</span>
+                                </div>
+
+                                 <div class="Social">
+                                        <ul>
+                                                <li>
+                                                        <i class="fa fa-envelope"></i>
+                                                        etsawakelmahala@gmail.com
+                                                </li>
+                                                <li>
+                                                        <i class="fa fa-phone"></i>
+                                                        01204132849
+                                                </li>
+                                                <li>
+                                                        <i class="fa fa-facebook-square"></i>
+                                                    </li>
+                                           </ul>
+                                  </div>
+
+                            </div>
+                            <div class="Copyrigths">
+                                                            <!-- Button trigger modal -->
+
+
+                                                                    © موقع مول المحلة الكبرى تنفيذ و تصميم
+
+                                            <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#exampleModalCenter" >
+                                                    إضغط هنا
+                                            </button>
+
+                                                وكل الحقوق محفوظة
+                                                <!-- Modal -->
+                                                <div class="modal fade" id="exampleModalCenter" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+                                                    <div class="modal-dialog modal-dialog-centered" role="document">
+                                                    <div class="modal-content">
+                                                        <div class="modal-header">
+                                                        <h5 class="modal-title" id="exampleModalCenterTitle">
+                                                           المصممين
+                                                           <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                                                <span aria-hidden="true">&times;</span>
+                                                            </button>
+
+                                                        </h5>
+                                                        </div>
+                                                        <div class="modal-body text-secondary">
+
+
+                                                            <div>
+                                                                    <h5>Ibraheem Khalifa</h5>
+                                                                    01127034564
+                                                                    <i class="fa fa-phone"></i>
+
+                                                            </div>
+                                                            <div class="Line"></div>
+                                                            <div>
+                                                                    <h5>Mohamed Shahin</h5>
+                                                                    01004107651
+                                                                    <i class="fa fa-phone"></i>
+
+                                                            </div>
+
+
+
+
+
+                                                        </div>
+                                                        <div class="modal-footer">
+                                                        <button type="button" class="btn btn-secondary" data-dismiss="modal">
+                                                            إغلاق
+                                                        </button>
+                                                        </div>
+                                                    </div>
+                                                    </div>
+                                                </div>
+                            </div>
+                </div>
+
+
+        </div>
+</div>
+
+ <!-- About US and contact -->
+
+ <script src="{% static "js/vendor/jquery-2.1.4.min.js" %}"></script>
+ <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.3/umd/popper.min.js"></script>
+ <script src="{% static "js/plugins.js" %}"></script>
+ <script src="{% static "js/main.js" %}"></script>
+ <script src="{% static "js/index.js" %}"></script>
+
+
+
+
+</body>
+</html>
