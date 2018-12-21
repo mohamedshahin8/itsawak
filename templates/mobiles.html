@@ -146,7 +146,7 @@
                                     </a>
                             </button>
                         </div>
-                        <img class="card-img-top" src="{{ shops.shop_image.url }}" alt="Card image cap">
+                        <img class="card-img-top" src="{% static "images/girl2.jpg" %}" alt="Card image cap">
 
   </div>
 
@@ -161,7 +161,7 @@
 
 
                     <div class="col-sm Item">
-                        <img  src="{{ product.image.url }}" >
+                        <img  src="{% static "images/girl1.jpg" %}" >
                         <ul>
                              <h5> {{ product.type }}</h5>
                               <li>
@@ -176,6 +176,10 @@
                                       المواصفات :
                                      <span>{{ product.describtion }} </span>
                               </li>
+                              <li>
+                                      المواصفات :
+                                     <span>{{ product.image }} </span>
+                              </li>
                          </ul>
                        </div>
                        {% endfor %}
@@ -187,9 +191,7 @@
 
 <div class="col-sm  asideAD">
         <div>
-          {%for obj in object_list%}
-             <img src="{{ obj.cloth5photo.url }}">
-          {%endfor%}
+             <img src="{% static "images/a.jpg" %}">
         </div>
 
 </div>

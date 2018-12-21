@@ -31,10 +31,10 @@ def home(request):
 
 def clothes_shops(request):
     clothes_shop = Shop.objects.filter(shop_type= "CLOTHES").order_by("-num_of_share")
-    queryset = MediaAdv.objects.all()
+    # queryset = MediaAdv.objects.all()
     queryset2 = TextAdv.objects.all()
     context = {
-        'object_list3': queryset,
+        # 'object_list3': queryset,
         'object_list': clothes_shop,
         'object_list2': queryset2
 
@@ -49,14 +49,14 @@ def clothes(request, pk=None):
     Shop.objects.filter(id=pk).update(num_of_share = int(shop.num_of_share) +1)
     product= Product.objects.filter(shop_name = shop)
     queryset2 = TextAdv.objects.all()
-    queryset = MediaAdv.objects.all()
+    # queryset = MediaAdv.objects.all()
 
 
     context = {
         'shops': shop,
         'products' : product,
         'object_list2': queryset2,
-        'object_list' : queryset
+        # 'object_list' : queryset
 
     }
     return render(request, 'clothes.html' , context)
@@ -66,12 +66,12 @@ def clothes(request, pk=None):
 def mobiles_shops(request):
     phones_shop = Shop.objects.filter(shop_type= "PHONES").order_by("-num_of_share")
     queryset2 = TextAdv.objects.all()
-    queryset = MediaAdv.objects.all()
+    # queryset = MediaAdv.objects.all()
 
     context= {
         'object_list': phones_shop,
         'object_list2': queryset2,
-        'object_list3': queryset,
+        # 'object_list3': queryset,
 
 
     }
@@ -84,14 +84,14 @@ def mobiles(request , pk= None):
     Shop.objects.filter(id=pk).update(num_of_share = int(shop.num_of_share) +1)
     product = Product.objects.filter(shop_name = shop)
     queryset2 = TextAdv.objects.all()
-    queryset = MediaAdv.objects.all()
+    # queryset = MediaAdv.objects.all()
 
 
     context= {
         'shops' : shop ,
         'products' : product,
         'object_list2': queryset2,
-        'object_list' : queryset
+        # 'object_list' : queryset
 
     }
 

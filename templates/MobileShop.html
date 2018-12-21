@@ -133,10 +133,11 @@
                                                    {% for obj in object_list %}
 
                                                             <a href="{% url 'mobiles' pk=obj.pk %}" class="col-md col-md-3">
-                                                                <img class="card-img-top" src="{{ obj.shop_image.url  }}">
+                                                                <img class="card-img-top" src="{% static "images/girl2.jpg" %}">
                                                                 <div class="card-body">
                                                                   <h5 class="card-title">{{ obj.shop_name }}</h5>
                                                                   <p class="card-text">{{ obj.shop_location }}</p>
+                                                                  <p class="card-text"> {{ obj.shop_image}} </p>
                                                                   <p class="ShareText">
 
                                                                     تم زياره الموقع <span>{{ obj.num_of_share }}</span> مرات
@@ -160,62 +161,54 @@
                                     <div class="container">
                                         <div class="row">
                                             <div id="ClothesShop-AD1" class="SP-ADS col-sm">
-                                              {% for obj in object_list3%}
-                                                <div>
-                                                    <img src="{{ obj.phone1photo1.url}}">
-                                                </div>
-                                                <div>
-                                                    <img src="{{ obj.phone1photo2.url}}">
-                                                </div>
-                                                <div>
-                                                    <img src="{{ obj.phone1photo3.url}}">
-                                                </div>
-                                                {% endfor %}
+                                              <div>
+                                                  <img src="{% static "images/a.jpg" %}">
+                                              </div>
+                                              <div>
+                                                  <img src="{% static "images/a.jpg" %}">
+                                              </div>
+                                              <div>
+                                                  <img src="{% static "images/a.jpg" %}">
+                                              </div>
                                             </div>
                                         </div>
                                         <div class="row">
                                             <div id="ClothesShop-AD2" class="SP-ADS col-sm">
-                                              {% for obj in object_list3%}
-                                                <div>
-                                                    <img src="{{ obj.phone2photo1.url}}">
-                                                </div>
-                                                <div>
-                                                    <img src="{{ obj.phone2photo2.url}}">
-                                                </div>
-                                                <div>
-                                                    <img src="{{ obj.phone2photo3.url}}">
-                                                </div>
-                                              {% endfor %}
+                                              <div>
+                                                  <img src="{% static "images/a.jpg" %}">
+                                              </div>
+                                              <div>
+                                                  <img src="{% static "images/a.jpg" %}">
+                                              </div>
+                                              <div>
+                                                  <img src="{% static "images/a.jpg" %}">
+                                              </div>
                                             </div>
                                         </div>
                                         <div class="row">
                                             <div id="ClothesShop-AD3" class="SP-ADS col-sm">
-                                              {% for obj in object_list3%}
-                                                <div>
-                                                    <img src="{{ obj.phone3photo1.url}}">
-                                                </div>
-                                                <div>
-                                                    <img src="{{ obj.phone3photo2.url}}">
-                                                </div>
-                                                <div>
-                                                    <img src="{{ obj.phone3photo3.url}}">
-                                                </div>
-                                              {% endfor %}
+                                              <div>
+                                                  <img src="{% static "images/a.jpg" %}">
+                                              </div>
+                                              <div>
+                                                  <img src="{% static "images/a.jpg" %}">
+                                              </div>
+                                              <div>
+                                                  <img src="{% static "images/a.jpg" %}">
+                                              </div>
                                             </div>
                                         </div>
                                         <div class="row">
                                                 <div id="ClothesShop-AD4" class="SP-ADS col-sm">
-                                                  {% for obj in object_list3%}
-                                                    <div>
-                                                        <img src="{{ obj.phone4photo1.url}}">
-                                                    </div>
-                                                    <div>
-                                                        <img src="{{ obj.phone4photo2.url}}">
-                                                    </div>
-                                                    <div>
-                                                        <img src="{{ obj.phone4photo3.url}}">
-                                                    </div>
-                                                  {% endfor %}
+                                                  <div>
+                                                      <img src="{% static "images/a.jpg" %}">
+                                                  </div>
+                                                  <div>
+                                                      <img src="{% static "images/a.jpg" %}">
+                                                  </div>
+                                                  <div>
+                                                      <img src="{% static "images/a.jpg" %}">
+                                                  </div>
                                                 </div>
                                             </div>
 
