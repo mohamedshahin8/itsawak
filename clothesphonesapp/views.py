@@ -14,10 +14,10 @@ def home(request):
     clothesshop2   = Shop.objects.filter(shop_type= "CLOTHES").order_by("-num_of_share")[1]
     clothesshop3   = Shop.objects.filter(shop_type= "CLOTHES").order_by("-num_of_share")[2]
     queryset = TextAdv.objects.all()
-    queryset2 = MediaAdv.objects.all()
+    # queryset2 = MediaAdv.objects.all()
     context = {
         'object_list': queryset,
-        'object_list2': queryset2,
+        # 'object_list2': queryset2,
         'phoneshop1' : phoneshop1,
         'phoneshop2' : phoneshop2,
         'phoneshop3' : phoneshop3,
