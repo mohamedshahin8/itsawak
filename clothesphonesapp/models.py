@@ -20,7 +20,7 @@ class Shop(models.Model):
     shop_phone      = models.CharField(max_length= 11)
     shop_location   = models.CharField(max_length= 220)
     num_of_share    = models.DecimalField(max_digits= 10 , decimal_places= 0, default= 0)
-    shop_image      = models.ImageField(upload_to = 'static/images' , default = None)
+    image_link      = models.CharField(max_length = 7 , default = None)
     class Meta:
         ordering = ['num_of_share']
 
