@@ -45,8 +45,6 @@ class Product(models.Model):
         return(self.type)
 
 
-
-
 class TextAdv(models.Model):
     address1_text = models.CharField(max_length = 300 , default = None ,help_text = 'write you advertise here')
     address2_text = models.CharField(max_length = 300 , default = None ,help_text = 'write you advertise here')
@@ -56,7 +54,7 @@ class TextAdv(models.Model):
 class MediaAdv(models.Model):
     homephoto1_id  = models.CharField(max_length = 700 ,default = None )
     homephoto2_id  = models.CharField(max_length = 700 ,default = None )
-    homephoto3 _id = models.CharField(max_length = 700 ,default = None )
+    homephoto3_id = models.CharField(max_length = 700 ,default = None )
 
     home2photo1_id = models.CharField(max_length = 700 ,default = None )
     home2photo2_id = models.CharField(max_length = 700 ,default = None )
