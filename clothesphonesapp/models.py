@@ -37,7 +37,7 @@ class Product(models.Model):
     price               = models.DecimalField(decimal_places = 2 , max_digits = 20, default= 0.00)
     describtion         = models.TextField(null = True , help_text = 'this is optional if type is ACCESSORIES')
     shop_name           = models.ForeignKey('Shop' , on_delete = models.CASCADE)
-    product_image    = models.CharField(max_length = 700 ,default = None )
+    image    = models.CharField(max_length = 700 ,default = None )
 
     class Meta:
         ordering = ['price']
