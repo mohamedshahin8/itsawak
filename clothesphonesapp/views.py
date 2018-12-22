@@ -84,7 +84,7 @@ def mobiles(request , pk= None):
     Shop.objects.filter(id=pk).update(num_of_share = int(shop.num_of_share) +1)
     product = Product.objects.filter(shop_name = shop)
     queryset2 = TextAdv.objects.all()
-    # queryset = MediaAdv.objects.all()
+    queryset = MediaAdv.objects.all()
 
 
     context= {

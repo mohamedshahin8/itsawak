@@ -16,7 +16,7 @@ class Shop(models.Model):
 
     shop_type       = models.CharField(max_length = 7 , choices = types , default = None)
     shop_owner      = models.ForeignKey(User, on_delete= models.CASCADE)
-    shop_name       = models.CharField(max_length= 25)
+    shop_name       = models.CharField(max_length= 250)
     shop_phone      = models.CharField(max_length= 11)
     shop_location   = models.CharField(max_length= 220)
     num_of_share    = models.DecimalField(max_digits= 10 , decimal_places= 0, default= 0)
