@@ -26,6 +26,6 @@ class ShopAdmin(admin.ModelAdmin):
     inlines         = [ProductInline]
 
 admin.site.register(TextAdv)
-# admin.site.register(MediaAdv)
+admin.site.register(MediaAdv)
 # admin.site.register(Product)
 admin.site.register(Shop , ShopAdmin)

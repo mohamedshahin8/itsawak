@@ -191,15 +191,19 @@
                           </div>
 
                         <div id="Main-AD1" class="ADS col-md-5">
+                          {% for obj in object_list2 %}
+                          
                                 <div>
-                                        <a><img src="{% static "images/a.jpg" %}"></a>
+                                        <a><img src="https://drive.google.com/uc?id={{ obj.homephoto1_id }}"></a>
                                 </div>
                                 <div>
-                                        <a><img src="{% static "images/a.jpg" %}"></a>
+                                        <a><img src="https://drive.google.com/uc?id={{ obj.homephoto2_id }}"></a>
                                  </div>
                                  <div>
-                                         <a><img src="{% static "images/a.jpg" %}"></a>
+                                        <a><img src="https://drive.google.com/uc?id={{ obj.homephoto3_id }}"></a>
                                 </div>
+                                {% endfor %}
+
                         </div>
                 </div>
 
@@ -243,16 +247,20 @@
 
                         </div>
                         <div id="Main-AD2" class="ADS  col-md-5">
+                          {% for obj in object_list2 %}
+
                                 <div>
-                                        <a><img src="{% static "images/a.jpg" %}"></a>
+                                      <a><img src="https://drive.google.com/uc?id={{ obj.home2photo1_id }}"></a>
                                 </div>
                                 <div>
-                                        <a><img src="{% static "images/a.jpg" %}"></a>
+                                      <a><img src="https://drive.google.com/uc?id={{ obj.home2photo2_id }}"></a>
                                 </div>
                                 <div>
-                                         <a href="#"><img src="{% static "images/a.jpg" %}"></a>
+                                      <a><img src="https://drive.google.com/uc?id={{ obj.home2photo3_id }}"></a>
                                 </div>
-                                                                     </div>
+                                {% endfor %}
+
+                       </div>
                 </div>
         </div>
 </div>
