@@ -133,7 +133,7 @@
                                                    {% for obj in object_list %}
 
                                                             <a href="{% url 'mobiles' pk=obj.pk %}" class="col-md col-md-3">
-                                                              <img class="card-img-top" src="https://drive.google.com/uc?id={{ obj.shop_image }} " style="width:246px;height:255px;">
+                                                              <img class="card-img-top" src="https://drive.google.com/uc?id={{ obj.shop_image }} " style="height:255px;">
                                                                 <div class="card-body">
                                                                   <h5 class="card-title">{{ obj.shop_name }}</h5>
                                                                   <p class="card-text">{{ obj.shop_location }}</p>
