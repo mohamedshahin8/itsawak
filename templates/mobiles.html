@@ -146,7 +146,7 @@
                                     </a>
                             </button>
                         </div>
-                        <img class="card-img-top" src="https://drive.google.com/uc?id={{ shops.shop_image }}">
+                        <img class="card-img-top" src="https://drive.google.com/uc?id={{ shops.shop_image }}" style="width:220px;height:220px;">
 
   </div>
 
@@ -161,7 +161,7 @@
 
 
                     <div class="col-sm Item">
-                      <img  src="https://drive.google.com/uc?id={{ product.image }}" >
+                      <img  src="https://drive.google.com/uc?id={{ product.image }}" style="width:246px;height:255px;">
                         <ul>
                              <h5> {{ product.type }}</h5>
                               <li>
@@ -188,7 +188,7 @@
 <div class="col-sm  asideAD">
         <div>
           {%for obj in object_list%}
-            <img src="https://drive.google.com/uc?id={{ obj.phone5photo }}">
+            <img src="https://drive.google.com/uc?id={{ obj.phone5photo }}" style="width:232px;height:450px;">
           {%endfor%}
         </div>
 

@@ -158,10 +158,10 @@
 أكثر محلات الموبايلات تفاعلا على الموقع                              </div>
                                   <div id ="TopSharedMobile1"class=" Shop ">
                                           <div class="hovereffect">
-                                              <img class="img-responsive" src="{% static "images/girl2.jpg" %}" alt="Shop Image">
+                                            <img  class="img-responsive" src="https://drive.google.com/uc?id={{ phoneshop1.shop_image }}" style="width:630px;height:250px;">
                                               <div class="overlay">
                                                  <h2>
-                                                          <span>{{ phoneshop1.shop_name}}    </span>
+                                                   <span> <a href="{% url 'clothes' pk=clothesshop1.pk %}">{{ phoneshop1.shop_name}}</a> </span>
                                                  </h2>
                                           </div>
                                           </div>
@@ -169,10 +169,10 @@
 
                                   <div id ="TopSharedMobile2" class=" Shop ">
                                                   <div class="hovereffect">
-                                                      <img class="img-responsive" src="{% static "images/girl2.jpg" %}" alt="Shop Image">
+                                                    <img  class="img-responsive" src="https://drive.google.com/uc?id={{ phoneshop2.shop_image }}" style="width:630px;height:250px;">
                                                       <div class="overlay">
                                                          <h2>
-                                                                  <span>{{ phoneshop2.shop_name}}   </span>
+                                                           <span> <a href="{% url 'clothes' pk=clothesshop1.pk %}">{{ phoneshop2.shop_name}}</a> </span>
                                                          </h2>
                                                       </div>
                                                   </div>
@@ -180,10 +180,10 @@
 
                                   <div id ="TopSharedMobile3" class=" Shop ">
                                                   <div class="hovereffect">
-                                                              <img class="img-responsive" src="{% static "images/girl2.jpg" %}" alt="Shop Image">
+                                                    <img  class="img-responsive" src="https://drive.google.com/uc?id={{ phoneshop3.shop_image }}" style="width:630px;height:250px;">
                                                               <div class="overlay">
                                                                  <h2>
-                                                                          <span>{{ phoneshop3.shop_name}}  </span>
+                                                                   <span> <a href="{% url 'clothes' pk=clothesshop1.pk %}">{{ phoneshop3.shop_name}}</a> </span>
                                                                  </h2>
                                                           </div>
                                                   </div>
@@ -192,7 +192,7 @@
 
                         <div id="Main-AD1" class="ADS col-md-5">
                           {% for obj in object_list2 %}
-                          
+
                                 <div>
                                         <a><img src="https://drive.google.com/uc?id={{ obj.homephoto1_id }}"></a>
                                 </div>
@@ -216,30 +216,30 @@
                                  </div>
                                  <div id ="TopSharedClothes1"class=" Shop ">
                                                 <div class="hovereffect">
-                                                    <img class="img-responsive" src="{% static "images/girl1.jpg" %}" alt="Shop Image">
+                                                  <img  class="img-responsive" src="https://drive.google.com/uc?id={{ clothesshop1.shop_image }}" style="width:630px;height:250px;">
                                                     <div class="overlay">
                                                        <h2>
-                                                                <span>{{ clothesshop1.shop_name}}   </span>
+                                                         <span> <a href="{% url 'clothes' pk=clothesshop1.pk %}">{{ clothesshop1.shop_name}}</a> </span>
                                                        </h2>
                                                     </div>
                                                 </div>
                                  </div>
                                  <div id ="TopSharedClothes2"class=" Shop ">
                                                 <div class="hovereffect">
-                                                    <img class="img-responsive" src="{% static "images/girl1.jpg" %}" alt="Shop Image">
+                                                  <img  class="img-responsive" src="https://drive.google.com/uc?id={{ clothesshop2.shop_image }}" style="width:630px;height:250px;">
                                                     <div class="overlay">
                                                        <h2>
-                                                                <span>{{ clothesshop2.shop_name}}    </span>
+                                                         <span> <a href="{% url 'clothes' pk=clothesshop2.pk %}">{{ clothesshop2.shop_name}}</a> </span>
                                                        </h2>
                                                     </div>
                                                 </div>
                                  </div>
                                  <div id ="TopSharedClothes3"class=" Shop ">
                                                 <div class="hovereffect">
-                                                    <img class="img-responsive" src="{% static "images/girl1.jpg" %}" alt="Shop Image">
+                                                  <img  class="img-responsive" src="https://drive.google.com/uc?id={{ clothesshop3.shop_image }}" style="width:630px;height:250px;">
                                                     <div class="overlay">
                                                        <h2>
-                                                                <span>{{ clothesshop3.shop_name}}  </span>
+                                                         <span> <a href="{% url 'clothes' pk=clothesshop3.pk %}">{{ clothesshop3.shop_name}}</a> </span>
                                                        </h2>
                                                     </div>
                                                 </div>
